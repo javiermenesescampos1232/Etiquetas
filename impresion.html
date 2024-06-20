@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas de Impresión</title>
+    <link rel="stylesheet" href="impresioon.css">
+</head>
+<body>
+    <div class="etiquetas-container">
+        <div class="etiqueta">
+            <h1>Etiqueta 1</h1>
+            <form>
+                <label for="name1">Nombre del Alumno:</label>
+                <input type="text" id="name1" name="name1">
+                <label for="id1">ID del Alumno:</label>
+                <input type="text" id="id1" name="id1">
+                <label for="carrera1">Carrera:</label>
+                <input type="text" id="carrera1" name="carrera1">
+                <label for="ingreso1">Año de Ingreso:</label>
+                <input type="date" id="ingreso1" name="ingreso1">
+                <label for="egreso1">Año de Egreso:</label>
+                <input type="date" id="egreso1" name="egreso1">
+                <label for="file1">Logo:</label>
+                <input type="file" id="file1" name="file1" onchange="previewLogo(event, 'logo-preview1')">
+                <img id="logo-preview1" src="#" alt="Vista previa del logo" style="display:none;">
+            </form>
+        </div>
+        <!-- Repetir el bloque de la etiqueta 3 veces más -->
+        <div class="etiqueta">
+            <h1>Etiqueta 2</h1>
+            <form>
+                <label for="name2">Nombre del Alumno:</label>
+                <input type="text" id="name2" name="name2">
+                <label for="id2">ID del Alumno:</label>
+                <input type="text" id="id2" name="id2">
+                <label for="carrera2">Carrera:</label>
+                <input type="text" id="carrera2" name="carrera2">
+                <label for="ingreso2">Año de Ingreso:</label>
+                <input type="date" id="ingreso2" name="ingreso2">
+                <label for="egreso2">Año de Egreso:</label>
+                <input type="date" id="egreso2" name="egreso2">
+                <label for="file2">Logo:</label>
+                <input type="file" id="file2" name="file2" onchange="previewLogo(event, 'logo-preview2')">
+                <img id="logo-preview2" src="#" alt="Vista previa del logo" style="display:none;">
+            </form>
+        </div>
+        <div class="etiqueta">
+            <h1>Etiqueta 3</h1>
+            <form>
+                <label for="name3">Nombre del Alumno:</label>
+                <input type="text" id="name3" name="name3">
+                <label for="id3">ID del Alumno:</label>
+                <input type="text" id="id3" name="id3">
+                <label for="carrera3">Carrera:</label>
+                <input type="text" id="carrera3" name="carrera3">
+                <label for="ingreso3">Año de Ingreso:</label>
+                <input type="date" id="ingreso3" name="ingreso3">
+                <label for="egreso3">Año de Egreso:</label>
+                <input type="date" id="egreso3" name="egreso3">
+                <label for="file3">Logo:</label>
+                <input type="file" id="file3" name="file3" onchange="previewLogo(event, 'logo-preview3')">
+                <img id="logo-preview3" src="#" alt="Vista previa del logo" style="display:none;">
+            </form>
+        </div>
+        <div class="etiqueta">
+            <h1>Etiqueta 4</h1>
+            <form>
+                <label for="name4">Nombre del Alumno:</label>
+                <input type="text" id="name4" name="name4">
+                <label for="id4">ID del Alumno:</label>
+                <input type="text" id="id4" name="id4">
+                <label for="carrera4">Carrera:</label>
+                <input type="text" id="carrera4" name="carrera4">
+                <label for="ingreso4">Año de Ingreso:</label>
+                <input type="date" id="ingreso4" name="ingreso4">
+                <label for="egreso4">Año de Egreso:</label>
+                <input type="date" id="egreso4" name="egreso4">
+                <label for="file4">Logo:</label>
+                <input type="file" id="file4" name="file4" onchange="previewLogo(event, 'logo-preview4')">
+                <img id="logo-preview4" src="#" alt="Vista previa del logo" style="display:none;">
+            </form>
+        </div>
+    </div>
+    <button id="print-button" onclick="window.print()">Imprimir Etiquetas</button>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url(''); /* Reemplaza 'fondo.jpg' con la ruta de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.etiquetas-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+}
+
+.etiqueta {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #555;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="file"] {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input[type="file"] {
+    padding: 5px;
+}
+
+img#logo-preview {
+    display: block;
+    margin: 10px auto 0 auto;
+    max-width: 100px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    display: block;
+    padding: 10px 20px;
+    margin: 20px auto;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para impresión */
+@media print {
+    body {
+        background-image: url('https://scontent.fcvj1-1.fna.fbcdn.net/v/t39.30808-6/316951276_10160062374696999_8143806137701271725_n.jpg?stp=dst-jpg_s960x960&_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=mIXP_EbvCXYQ7kNvgGloIfg&_nc_ht=scontent.fcvj1-1.fna&oh=00_AYCN7PKqXD5UGJCB1Sd9JrMGFAi3KJciG0bmrkAf_ibcww&oe=666AA707');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        margin: 0;
+        padding: 20px;
+    }
+    .etiquetas-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 10px;
+        width: 100%;
+        max-width: 800px;
+        height: 100%;
+    }
+    .etiqueta, h1, form {
+        background-color: rgba(255, 255, 255, 0.8);
+        box-shadow: none;
+        page-break-inside: avoid;
+    }
+    .etiqueta {
+        padding: 10px;
+        border-radius: 8px;
+    }
+    label, input {
+        color: #555;
+        margin: 0;
+        padding: 5px;
+        width: calc(100% - 10px);
+        font-size: 14px;
+    }
+    input {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        margin-top: 5px;
+    }
+    img#logo-preview {
+        max-width: 100px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+    button#print-button {
+        display: none;
+    }
+}
